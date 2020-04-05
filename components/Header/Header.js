@@ -1,8 +1,7 @@
-import Fragment from "react";
 
 const Header = () => {
   return (
-    <div className="w-max m-auto">
+    <div className="m-auto w-max">
       <div className="h-6 py-px my-px">
         <div className="float-right">
           <ul className="flex items-center h-6 text-xs text-gray-800">
@@ -12,35 +11,35 @@ const Header = () => {
                 <span className="text-tiny">1860 123 1000</span>
               </div>
             </li>
-            <li className="relative h-full px-3 mx-2 z-50">
-              <a className="flex h-full items-center cursor-pointer">
+            <li className="relative z-50 h-full px-3 mx-2">
+              <a className="flex items-center h-full cursor-pointer">
                 <i className="w-3 h-4 locationIcon" />
                 <span className="mx-1 text-tiny hover:text-green">
                   Domlur, Bangalore
                 </span>
-                <i className="w-2 h-1 p-px box-content addressDropdownImg" />
+                <i className="box-content w-2 h-1 p-px addressDropdownImg" />
               </a>
-              <div className="absolute top-full right-0 hidden">
-                <form className="py-3 px-5 text-sm bg-white">
+              <div className="absolute right-0 hidden top-full">
+                <form className="px-5 py-3 text-sm bg-white">
                   <label>Select your city to start shopping</label>
                   <input
                     type="search"
-                    className="w-75 h-1 p-4 border border-gray-500 box-content mb-4 text-tiny cursor-pointer"
+                    className="box-content h-1 p-4 mb-4 border border-gray-500 cursor-pointer w-75 text-tiny"
                   />
                   <input
                     type="search"
-                    className="w-75 h-1 p-4 border border-gray-500 box-content mb-3 text-tiny cursor-pointer"
+                    className="box-content h-1 p-4 mb-3 border border-gray-500 cursor-pointer w-75 text-tiny"
                     placeholder="Enter your area / apartment / pincode"
                   />
-                  <button className="block px-5 py-1 border border-green m-auto bg-green">
+                  <button className="block px-5 py-1 m-auto border border-green bg-green">
                     Continue
                   </button>
                 </form>
               </div>
             </li>
             <li className="inline-block">
-              <div className="flex items-center text-tiny cursor-pointer">
-                <i className="w-4 h-4 px-px box-content mr-1 nonMemberIcon" />
+              <div className="flex items-center cursor-pointer text-tiny">
+                <i className="box-content w-4 h-4 px-px mr-1 nonMemberIcon" />
                 <span className="cursor-pointer hover:text-green">Login</span>
                 <span className="mx-1">|</span>
                 <span className="cursor-pointer hover:text-green">Sign up</span>
@@ -60,25 +59,25 @@ const Header = () => {
           <form className="flex w-full">
             <input
               placeholder="Search for Products.."
-              className="flex-auto px-3 h-5 py-1 box-content border border-gray-700 focus:border-green text-sm placeholder-gray-700"
+              className="box-content flex-auto h-5 px-3 py-1 text-sm placeholder-gray-700 border border-gray-700 focus:border-green"
             />
-            <button className="w-8 px-px h-5 py-1 box-content border border-green searchIcon" />
+            <button className="box-content w-8 h-5 px-px py-1 border border-green searchIcon" />
           </form>
         </div>
         <div className="mx-5"></div>
         <div className="ml-4">
           <div className="relative group">
-            <a className="relative inline-flex items-center h-8 p-3 border border-gray-200 box-content group-hover:border-gray-400 group-hover:border-b-0 cursor-pointer bg-gray-200 z-20">
+            <a className="box-content relative z-20 inline-flex items-center h-8 p-3 bg-gray-200 border border-gray-200 cursor-pointer group-hover:border-gray-400 group-hover:border-b-0">
               <i className="w-10 h-full mr-3 basketIcon" />
-              <span className="text-right text-tiny font-semibold leading-tight text-gray-800">
+              <span className="font-semibold leading-tight text-right text-gray-800 text-tiny">
                 <span>My Basket</span>
                 <br />
                 <span>0 items</span>
               </span>
             </a>
-            <div className="absolute top-full right-0 -mt-px hidden group-hover:block hover:block z-10">
-              <ul className="p-3 border border-gray-400 bg-gray-200">
-                <li className="flex items-center justify-center w-128 h-20 border border-gray-400 text-sm text-gray-800 bg-white">
+            <div className="absolute right-0 z-10 hidden -mt-px top-full group-hover:block hover:block">
+              <ul className="p-3 bg-gray-200 border border-gray-400">
+                <li className="flex items-center justify-center h-20 text-sm text-gray-800 bg-white border border-gray-400 w-128">
                   Your basket is empty. Start shopping now!
                 </li>
               </ul>
@@ -87,21 +86,21 @@ const Header = () => {
         </div>
       </div>
       <div>
-        <ul className="flex w-full h-10 border border-solid border-gray-400">
+        <ul className="flex w-full h-10 border border-gray-400 border-solid">
           <li className="inline-block h-full bg-green">
-            <a className="flex justify-between items-center w-56 h-full px-2 box-content border-l border-r border-green text-white cursor-pointer">
+            <a className="box-content flex items-center justify-between w-56 h-full px-2 text-white border-l border-r cursor-pointer border-green">
               <span className="font-semibold text-small">SHOP BY CATEGORY</span>
-              <i className="w-3 h-2  dropdownIcon" />
+              <i className="w-3 h-2 dropdownIcon" />
             </a>
           </li>
           <li className="inline-block h-full hover:bg-green-dark">
-            <a className="flex items-center h-full px-4 text-sm text-gray-700 hover:text-white cursor-pointer">
+            <a className="flex items-center h-full px-4 text-sm text-gray-700 cursor-pointer hover:text-white">
               <i className="w-4 h-4 mr-1 offersIcon" />
               <span>OFFERS</span>
             </a>
           </li>
           <li className="inline-block h-full hover:bg-green-dark">
-            <a className="flex justify-around items-center h-full px-4 text-sm text-gray-700 hover:text-white cursor-pointer">
+            <a className="flex items-center justify-around h-full px-4 text-sm text-gray-700 cursor-pointer hover:text-white">
               <i className="w-5 h-4 mr-1 bbSpecialtyIcon" />
               <span>BB SPECIALTY</span>
             </a>
