@@ -1,3 +1,4 @@
+http://13.233.121.136:8080/buildStatus/icon?job=firstcli
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
